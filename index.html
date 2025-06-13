@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus Ribeiro Rocha - Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #0a2239;
+            color: white;
+            overflow: hidden;
+        }
+        .container {
+            height: 100vh;
+            width: 100%;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #042b50; /* azul mais claro e vivo */
+            background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+            background-repeat: repeat;
+            background-size: auto; /* ou 'contain'/'cover' se preferir outro comportamento */
+            background-position: top left;
+        }
+
+        .content {
+            max-width: 600px;
+            z-index: 2;
+        }
+        h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        h2 {
+            font-size: 24px;
+            font-weight: 300;
+            margin: 10px 0 30px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border: 2px solid white;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: white;
+            color: #0a2239;
+        }
+        .floating-icons {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        .icon {
+            position: absolute;
+            width: 40px;
+            opacity: 0.1;
+            animation: float 20s linear infinite;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+            }
+            100% {
+                transform: translateY(-100vh) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Fullstack Developer & Data Analyst</h1>
+            <h2>Hello, I’m Matheus Ribeiro Rocha</h2>
+            <a href="trabalhos.html" class="btn">See my work</a>
+        </div>
+        <div class="floating-icons">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" class="icon" style="left:10%; animation-delay: 0s;">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" class="icon" style="left:30%; animation-delay: 5s;">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968332.png" class="icon" style="left:50%; animation-delay: 10s;">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" class="icon" style="left:70%; animation-delay: 15s;">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968262.png" class="icon" style="left:90%; animation-delay: 20s;">
+        </div>
+    </div>
+</body>
+</html>

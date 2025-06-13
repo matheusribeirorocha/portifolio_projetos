@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meus_Projetos - Matheus Ribeiro Rocha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #0a2239;
+            color: white;
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 40px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        h2 {
+            margin-top: 40px;
+            color: #7ecfff;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 18px;
+            background: rgba(255,255,255,0.05);
+            padding: 16px;
+            border-radius: 8px;
+        }
+        a {
+            color: #7ecfff;
+            text-decoration: underline;
+        }
+        .voltar {
+            display: inline-block;
+            margin-top: 40px;
+            color: #fff;
+            text-decoration: underline;
+        }
+        /* Efeito de digitação */
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+        .text-container {
+            font-family: 'Fira Mono', 'Consolas', 'Source Code Pro', 'Menlo', 'Monaco', 'Courier New', monospace;
+            font-size: 36px;
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+        /* "meus_projetos" com cursor piscando */
+        #meus-projetos {
+            width: 14ch; /* 13 + 1 */
+            border-right: 3px solid #7ecfff;
+            animation: typing 1.5s steps(13, end) 1, blink 0.7s step-end infinite;
+        }
+        /* "Front End" só digitação */
+        #front-end {
+            width: 10ch; /* 9 + 1 */
+            border-right: none;
+            animation: typing 1.5s steps(9, end) 1;
+        }
+        /* "Back End (Python_Developer)" só digitação */
+        #back-end {
+            width: 26ch; /* 25 + 1 */
+            border-right: none;
+            animation: typing 2.5s steps(25, end) 1;
+        }
+    </style>
+</head>
+<body>
+    <h1><span class="text-container" id="meus-projetos">meus_projetos</span></h1>
+
+    <h2><span class="text-container" id="front-end">Front End</span></h2>
+    <ul>
+        <li>
+            <strong>Calculadora Simples</strong><br>
+            Projeto de calculadora feita com HTML, CSS e JavaScript.<br>
+            <a href="caminho/para/calculadora/index.html" target="_blank">Ver projeto</a>
+        </li>
+        <li>
+            <strong>Jogo da Velha</strong><br>
+            Jogo da velha interativo desenvolvido para disciplina de lógica.<br>
+            <a href="caminho/para/jogo-da-velha/index.html" target="_blank">Ver projeto</a>
+        </li>
+        <li>
+            <strong>To-Do List</strong><br>
+            Lista de tarefas dinâmica usando JavaScript.<br>
+            <a href="caminho/para/todo-list/index.html" target="_blank">Ver projeto</a>
+        </li>
+        <!-- Adicione mais projetos aqui -->
+    </ul>
+
+    <h2><span class="text-container" id="back-end">BackIII End (Python_Developer)</span></h2>
+    <ul>
+        <li>
+            <strong>Projeto 1:</strong> API RESTful com Flask<br>
+            <a href="#" target="_blank">Ver código</a>
+        </li>
+        <li>
+            <strong>Projeto 2:</strong> Sistema de Cadastro com Django<br>
+            <a href="#" target="_blank">Ver código</a>
+        </li>
+        <!-- Adicione mais projetos aqui -->
+    </ul>
+
+    <a href="trabalhos.html">Veja meu trabalho</a>
+    <a href="index.html" class="voltar">Voltar para o início</a>
+</body>
+</html>
