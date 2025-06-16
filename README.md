@@ -7,9 +7,7 @@
   
 </head>
 <body>
-    <p align="center">
-  <img src="imagens\ChatGPT ImagePC.png" alt="logo do python" width="200px">
-</p>
+   
 
 
    <p align="center">
