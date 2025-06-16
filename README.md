@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus_Projetos</title>
+    
   
 </head>
 <body>
+    <p align="center">
+  <img src="imagens\ChatGPT ImagePC.png" alt="logo do python" width="200px">
+</p>
+
 
    <p align="center">
   <img src="https://images.icon-icons.com/112/PNG/512/python_18894.png" alt="logo do python" width="45px">
   <img src="https://images.icon-icons.com/2790/PNG/96/html_filetype_icon_177535.png" alt="logo do html" width="45px">
   <img src="https://images.icon-icons.com/2790/PNG/96/css_filetype_icon_177544.png" alt="logo do django" width="45px">
+    <img src="imagens\codigo.png" width="45px">
+    <img src="imagens\script-java.png" alt="logo do javascript" width="45px">
 </p>
 
 
