@@ -1,0 +1,327 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url(fonts/Nunito-Regular.ttf) format('truetype');
+    font-weight: 400; 
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url(fonts/Nunito-Bold.ttf) format('truetype');
+    font-weight: 700; 
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url(fonts/Nunito-ExtraBold.ttf) format('truetype');
+    font-weight: 800; 
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url(fonts/Nunito-Black.ttf) format('truetype');
+    font-weight: 900; 
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+:root {
+    --yellow-dark: #FFC107;
+    --yellow-light: #FFEB3B;
+    --black: #000;
+    --white: #fff;
+    --gray-dark: #333;
+    --gray-light: #F2F2F2;
+    --green-btn: #4CAF50;
+    --text-color: #333;
+    --heading-color: #000;
+
+    
+    --font-primary: 'Nunito', sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary); 
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--white);
+}
+.container {
+    width: 100%; 
+    max-width: 100%; 
+    margin: 0 auto; 
+    padding: 0; 
+}
+.main-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px; 
+    background-color: #f9d02a; 
+    width: 100%;
+    min-height: 80px; 
+    position: relative; 
+    z-index: 10; 
+}
+
+
+.logo img {
+    max-width: 250px; 
+    height: auto;
+    display: block;
+    margin-left: 20px;
+    margin-top: 40px; 
+}
+
+.hamburguer-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60px; 
+    height: 52px; 
+
+    z-index: 100;
+    margin-right: 60px;
+    margin-top: 40px; 
+    
+    border-radius: 8px; }
+
+
+.hamburguer-icon span {
+    display: block;
+    width: 100%;
+    height: 10px; 
+    background-color: #000;
+    border-radius: 2px; 
+}
+
+
+.hero-section {
+    
+    background-color: #f9d02a; 
+    background-image: url('imagens/fundo.png'); 
+    background-size: auto 70%; 
+    background-position: center bottom; 
+    background-repeat: no-repeat; 
+    padding: 40px 0; 
+    text-align: center; 
+}
+
+
+.hero-section .container {
+    padding: 0 5%;
+}
+
+.hero-section h1 {
+    font-family: var(--font-primary); 
+    font-weight: 900; 
+    color: var(--black); 
+    font-size: 1.6em; 
+    line-height: 1.2; 
+    margin-bottom: 15px; 
+    text-align: center; 
+    padding-top: 15px; 
+}
+
+.hero-section p {
+    font-family: var(--font-primary); 
+    font-weight: 400; 
+    font-style: normal; 
+    color: #1d1b1b; 
+
+    font-size: 2.0em; 
+    line-height: 1.4;
+
+    
+    margin: 20px auto 25px auto; 
+    
+    max-width: 850px;
+    padding: 0 10px; 
+    text-align: center;
+}
+.title-balloon {
+    background-color: var(--white); 
+    padding: 80px 30px; 
+    border-radius: 40px;
+    width: 65%; 
+    max-width: none;
+    margin: 40px auto 30px auto; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.title-balloon h1 {
+    font-family: var(--font-primary); 
+    font-weight: 900; 
+    color: var(--black); 
+    font-size: 3.4em; 
+    line-height: 1.2;
+    font-style: italic; 
+    margin-bottom: 0;
+    padding: 0;
+    text-align: center;
+}
+.hero-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-images img {
+    max-width: 70%; 
+    height: auto;
+    object-fit: contain;
+}
+
+.quem-somos h2{
+    text-align: center;
+    padding-top: 25px;
+    font-family: var(--font-primary) ;
+    font-weight: 900;
+    color: #000;
+    font-style: italic;
+    font-size: 4.0em;
+    line-height: 4.0;
+    letter-spacing: -4px;
+
+
+}
+.quadro {
+    text-align: center;
+}
+.nem-todo-heroi {
+
+    text-align: center;
+    padding-top: 40px;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    color: #000;
+    font-style: italic;
+}
+.nossabase {
+    text-align: center;
+    margin-top: 20px;
+    font-family: var(--font-primary);
+    font-weight: 200;
+    
+}
+button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 150px;
+    height: 42px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    font-family: var(--font-primary);
+    font-weight: 600;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.somos-quem{
+background-color: #000;
+}
+.somos-quem h2{
+    text-align: center;
+    padding-top: 25px;
+    font-family: var(--font-primary) ;
+    font-weight: 900;
+    color: #f9d02a;
+    font-style: italic;
+    font-size: 4.0em;
+    line-height: 4.0;
+    letter-spacing: -4px;
+}
+.somos-quem h1{
+  text-align: center;
+  font-family: var(--font-primary);
+  font-weight: 200;
+  color: #fff;
+  line-height: 1.4;
+}
+.fluxograma{
+  text-align: center;
+}
+.clique h1{
+  background-color: #f9d02a;
+  line-height: 1.4;
+  text-align: center;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  padding-top: 40px;
+
+}
+.clique{
+  background-color:#f9d02a ;
+  height: 200px;
+}
+.port{
+  text-align: center;
+}
+.port h2{
+  color: #cc047f;
+  margin-top: 500px;
+  height: 600px;
+  
+}
+.parceiro {
+    
+    text-align: center;
+    background-color: #e6e7e8;
+    
+}
+.parceiro h1{
+    color: #e6e7e8;
+}
+.parceiro img {
+    width: 100%;
+    height: 100%;
+}
+.ajudar {
+    background-color: #000;
+}
+.ajudar h2 {
+    color: #f9d02a;
+}
+.ajudar h1 {
+    text-align: center;
+    color: #fff;
+    font-family: var(--font-primary);
+    font-weight: 200;
+    height: 180px;
+}
+form {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+.form {
+    background-color: #f9d02a;
+}

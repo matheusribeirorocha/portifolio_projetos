@@ -1,0 +1,52 @@
+body {
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 600px;
+  margin-top: 60px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+.converter input,
+.converter select,
+.converter button {
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  width: 100%;
+}
+
+button {
+  background-color: #00ffd5;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #00bfa5;
+}
+
+.historico {
+  margin-top: 20px;
+}
+
+#lista-historico li {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 6px 0;
+  padding: 8px;
+  border-radius: 8px;
+}
